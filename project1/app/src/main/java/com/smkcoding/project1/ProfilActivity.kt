@@ -17,7 +17,7 @@ class ProfilActivity : AppCompatActivity() {
         setContentView(R.layout.activity_profil)
         btnCall.setOnClickListener{dialPhoneNumber(txtTelp.text.toString())}
         ambilData()
-
+        btnAbout.setOnClickListener {goToTentang()}
         btnEditName.setOnClickListener { navigasiKeEditProfil() }
     }
     private fun ambilData(){
@@ -65,5 +65,9 @@ class ProfilActivity : AppCompatActivity() {
         if (intent.resolveActivity(packageManager) != null){
             startActivity(intent)
         }
+    }
+    private fun goToTentang(){
+        val intent = Intent (this,Tentang::class.java)
+        startActivity(intent)
     }
 }
