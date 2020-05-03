@@ -38,6 +38,14 @@
             android:entries="@array/jenis_kelamin"/>
 
         <EditText
+            android:id="@+id/edtUmur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Umur(th)"
+            android:layout_margin="16dp"/>
+
+
+        <EditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,7 +64,7 @@
             android:id="@+id/edtAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Alanat"
+            android:hint="Alamat"
             android:layout_margin="16dp"
             android:inputType="textImeMultiLine"/>
 
